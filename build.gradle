@@ -7,10 +7,17 @@ apply plugin: 'war'
 sourceCompatibility = 1.8
 
 repositories {
-    mavenCentral()
+    // 删除国外镜像
+    // mavenCentral()
+    // 导入国内镜像
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven{ url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
 }
 
 dependencies {
+    // 添加最新的SpringMVC
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.18.RELEASE'
+
     testCompile group: 'junit', name: 'junit', version: '4.11'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
