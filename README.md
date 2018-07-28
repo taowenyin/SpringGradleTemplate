@@ -1,2 +1,2 @@
 # SpringGradleTemplate
-一个使用Intellij IDEA和Gradle创建的SpringMVC模板
+一个使用Intellij IDEA和Gradle创建的SpringMVC模板。使用时还需要配置Tomcat服务器
