@@ -1,0 +1,2 @@
+# SpringGradleTemplate
+一个使用Intellij IDEA和Gradle创建的SpringMVC模板
